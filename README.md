@@ -8,7 +8,6 @@
 >pods, letting them focus on the workload development and not on configuring/mounting/tuning the data access. Thanks to
 >[Container Storage Interface](https://kubernetes-csi.github.io/docs/) it is extensible to support additional data sources in the future.
 
-![DLF](./docs/pictures/dlf.png)
 
 A Kubernetes Framework to provide easy access to S3 and NFS **Datasets** within pods. Orchestrates the provisioning of
 **Persistent Volume Claims** and **ConfigMaps** needed for each **Dataset**. Find more details in our [FAQ](https://datashim-io.github.io/datashim/FAQ/)
