@@ -20,7 +20,7 @@ In order to quickly deploy DLF, based on your environment execute **one** of the
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/datashim-io/datashim/master/release-tools/manifests/dlf.yaml
 ```
-- **Kubernetes on IBM Cloud**
+<!-- - **Kubernetes on IBM Cloud**
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/datashim-io/datashim/master/release-tools/manifests/dlf-ibm-k8s.yaml
 ```
@@ -31,17 +31,17 @@ kubectl apply -f https://raw.githubusercontent.com/datashim-io/datashim/master/r
 - **Openshift on IBM Cloud**
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/datashim-io/datashim/master/release-tools/manifests/dlf-ibm-oc.yaml
-```
+``` -->
 
 Wait for all the pods to be ready
 ```bash
 kubectl wait --for=condition=ready pods -l app.kubernetes.io/name=dlf -n dlf
 ```
 
-As an **optional** step, label the namespace(or namespaces) you want in order have the pods labelling functionality (see below).
+<!-- As an **optional** step, label the namespace(or namespaces) you want in order have the pods labelling functionality (see below).
 ```bash
 kubectl label namespace default monitor-pods-datasets=enabled
-```
+``` -->
 
 <!-- _In case don't have an existing S3 Bucket follow our wiki to [deploy an Object Store](https://github.com/datashim-io/datashim/wiki/Deployment-and-Usage-of-S3-Object-Stores)
 and populate it with data._ -->
